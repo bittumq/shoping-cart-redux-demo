@@ -196,7 +196,7 @@ let nevigate=useNavigate();
 
           <Link to="/" style={{textDecoration:'none',color:'white'}}>
             <Typography className={classes.title} variant="h6" noWrap>
-              Fashion Collection
+              SHOPING
             </Typography>
           </Link>
           <div className={classes.search}>

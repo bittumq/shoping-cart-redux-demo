@@ -47,7 +47,7 @@ const Cart = () => {
                           <h4 className='text-uppercase text-black-50'>
                             {item.category}
                           </h4>
-                          <h1 className='display-5' style={{fontSize: "1rem"}}>{item.title}</h1>
+                          <h1 className='display-5' style={{ fontSize: "1rem" }}>{item.title}</h1>
                           <p className='lead fw-bolder'>
                             Rating {item.rating && item.rating.rate}
                             <i className='fa fa-star'> ★ </i>
@@ -72,7 +72,7 @@ const Cart = () => {
                                       // changehandle(item.id);
                                     }}
                                   >
-                                    <span class="glyphicon glyphicon-plus"></span>
+                                    <span class="glyphicon glyphicon-plus">+</span>
                                   </button>
                                 </span>
                                 <span className='form-control input-number'>{item.qty}  </span>
@@ -83,7 +83,7 @@ const Cart = () => {
                                       //changehandle(item.id);
                                     }}
                                     disabled={item.qty == 1 ? true : false}
-                                  > <span class="glyphicon glyphicon-minus"></span></button>
+                                  > <span class="glyphicon glyphicon-minus">-</span></button>
                                 </span>
                               </div>
                             </div>
@@ -92,14 +92,14 @@ const Cart = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                 </div>
               </div>
             </div>
           </section>
         )
       })}
-{/* next html summary */}
+      {/* next html summary */}
       <div className="col-md-4">
         <div className="card mb-4">
           <div className="card-header py-3">
@@ -128,11 +128,11 @@ const Cart = () => {
               </li>
             </ul>
             <Link to="/payment">
-            <button type="button" className="btn btn-primary btn-lg btn-block">
-              Go to checkout
-            </button>
+              <button type="button" className="btn btn-primary btn-lg btn-block">
+                Go to checkout
+              </button>
             </Link>
-           
+
           </div>
         </div>
       </div>
